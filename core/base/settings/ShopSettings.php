@@ -13,8 +13,8 @@ class ShopSettings
         'admin' => [
             'name' => 'sudo'
         ],
-        'vasya' => [
-            'name' => 'vasya'
+        'admin2' => [
+            'name' => 'Root'
         ]
     ];
 
@@ -44,7 +44,32 @@ class ShopSettings
 
         self::$_instance = new self;
         self::$_instance->baseSettings = Settings::instance();
-        $baseProperties = self::$_instance->baseSettings->clueProperties(get_class());
+
+        $arr1 = [
+            'admin' => [
+                'name' => 'root',
+                'pwd' => '/etc',
+                'values' => [1,2,10]
+            ]
+        ];
+
+        $arr2 = [
+            'admin' => [
+                'name' => 'sudo',
+                'values' => [1,4]
+            ]
+        ];
+
+        $newArr = self::$_instance->baseSettings->arrayMergeRecursive(
+            $arr1,
+            $arr2
+        );
+
+        var_dump($newArr);
+
+        die;
+
+        $baseProperties = self::$_instance->baseSettings->glueProperties(get_class());
         self::$_instance->setProperty($baseProperties);
 
         return self::$_instance;
