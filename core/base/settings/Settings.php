@@ -58,37 +58,44 @@ class Settings
         return self::$_instance = new self;
     }
 
-    public function clueProperties($class)
+    public function glueProperties($class)
     {
         $baseProperties = [];
 
-        foreach ($this as $name => $item) {
-            $property = $class::get($name);
+        //Прохожусь по свойствам текущего класса Settings
+        foreach ($this as $propertyName => $insideBaseProperty) {
+            // Запрашиваю свойства класса ShopSettings на основе свойств базового Settings
+            // $insideProperty = полученые данные из массива routes и templateArr
+            $insideProperty = $class::get($propertyName);
 
-            if(is_array($property) && is_array($item)) {
-                $baseProperties[$name] = $this->arrayMergeRecursive($this->$name, $property);
+            //Если полученые  $insideProperty массив и $insideBaseProperty, тоже массив
+            // то я формирую массив с аналогичными ключами а в значение применяю функцию которая будет клеить мои массивы
+            // базовый с массивом из ShopSettings
+            if(is_array($insideProperty) && is_array($insideBaseProperty)) {
+                //$baseProperties['routes'] = $this->arrayMergeRecursive($this->routes, 'routes' из ShopSettings)
+                //$baseProperties['templateArr'] = $this->arrayMergeRecursive($this->templateArr, 'templateArr' из ShopSettings)
+                $baseProperties[$propertyName] = $this->arrayMergeRecursive($insideBaseProperty, $insideProperty);
                 continue;
             }
 
-            if(!$property) $baseProperties[$name] = $this->$name;
+            //Если у ShopSettings не существует таких свойств как у Settings, то записую те которые в Settings
+            if(!$insideProperty) $baseProperties[$propertyName] = $this->$propertyName;
         }
 
         return $baseProperties;
     }
 
-    public function arrayMergeRecursive()
+    public function arrayMergeRecursive($base, ...$arrays)
     {
-        $arrays = func_get_args();
-
-        $base = array_shift($arrays);
-
         foreach ($arrays as $array) {
             foreach ($array as $key => $value) {
-                if(is_array($value) && is_array($base[$key])) {
-                    $base[$key] = $this->arrayMergeRecursive($base[$key], $value);
-                }else{
+                if (is_array($value) && (!isset($base[$key]) || is_array($base[$key]))) {
+                    $base[$key] = $this->arrayMergeRecursive($base[$key] ?? [], $value);
+                } else {
                     if(is_int($key)) {
-                        if(!in_array($value, $base)) array_push( $base, $value);
+                        if(!in_array($value, $base)) {
+                            $base[] = $value;
+                        }
                         continue;
                     }
                     $base[$key] = $value;
