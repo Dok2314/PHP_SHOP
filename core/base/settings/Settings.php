@@ -4,7 +4,7 @@ namespace core\base\settings;
 
 class Settings
 {
-    static private $_instance;
+    static private $instance;
 
     private $routes = [
         'admin' => [
@@ -51,35 +51,26 @@ class Settings
 
     static public function instance()
     {
-        if(self::$_instance instanceof self) {
-            return self::$_instance;
+        if(self::$instance instanceof self) {
+            return self::$instance;
         }
 
-        return self::$_instance = new self;
+        return self::$instance = new self;
     }
 
     public function glueProperties($class)
     {
         $baseProperties = [];
 
-        //Прохожусь по свойствам текущего класса Settings
-        foreach ($this as $propertyName => $insideBaseProperty) {
-            // Запрашиваю свойства класса ShopSettings на основе свойств базового Settings
-            // $insideProperty = полученые данные из массива routes и templateArr
-            $insideProperty = $class::get($propertyName);
+        foreach ($this as $settingsPropertyName => $settingsPropertyValue) {
+            $parentPropertyValue = $class::get($settingsPropertyName);
 
-            //Если полученые  $insideProperty массив и $insideBaseProperty, тоже массив
-            // то я формирую массив с аналогичными ключами а в значение применяю функцию которая будет клеить мои массивы
-            // базовый с массивом из ShopSettings
-            if(is_array($insideProperty) && is_array($insideBaseProperty)) {
-                //$baseProperties['routes'] = $this->arrayMergeRecursive($this->routes, 'routes' из ShopSettings)
-                //$baseProperties['templateArr'] = $this->arrayMergeRecursive($this->templateArr, 'templateArr' из ShopSettings)
-                $baseProperties[$propertyName] = $this->arrayMergeRecursive($insideBaseProperty, $insideProperty);
+            if(is_array($settingsPropertyValue) && is_array($parentPropertyValue)) {
+                $baseProperties[$settingsPropertyName] = $this->arrayMergeRecursive($settingsPropertyValue, $parentPropertyValue);
                 continue;
             }
 
-            //Если у ShopSettings не существует таких свойств как у Settings, то записую те которые в Settings
-            if(!$insideProperty) $baseProperties[$propertyName] = $this->$propertyName;
+            if(!$settingsPropertyValue) $baseProperties[$settingsPropertyName] = $this->$settingsPropertyName;
         }
 
         return $baseProperties;
