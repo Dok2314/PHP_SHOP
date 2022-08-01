@@ -7,15 +7,15 @@ use core\base\settings\ShopSettings;
 
 class RouteController
 {
-    static private $_instance;
+    static private $instance;
 
     static public function getInstance()
     {
-        if(self::$_instance instanceof self) {
-            return self::$_instance;
+        if(self::$instance instanceof self) {
+            return self::$instance;
         }
 
-        return self::$_instance = new self;
+        return self::$instance = new self;
     }
 
     private function __clone()

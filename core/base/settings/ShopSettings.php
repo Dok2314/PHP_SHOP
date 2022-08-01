@@ -6,7 +6,7 @@ use core\base\settings\Settings;
 
 class ShopSettings
 {
-    static private $_instance;
+    static private $instance;
     private $baseSettings;
 
     private $routes = [
@@ -38,23 +38,23 @@ class ShopSettings
 
     static public function instance()
     {
-        if(self::$_instance instanceof self) {
-            return self::$_instance;
+        if(self::$instance instanceof self) {
+            return self::$instance;
         }
 
-        self::$_instance = new self;
-        self::$_instance->baseSettings = Settings::instance();
-        $baseProperties = self::$_instance->baseSettings->glueProperties(get_class());
-        self::$_instance->setProperty($baseProperties);
+        self::$instance = new self;
+        self::$instance->baseSettings = Settings::instance();
+        $baseProperties = self::$instance->baseSettings->glueProperties(get_class());
+        self::$instance->setProperty($baseProperties);
 
-        return self::$_instance;
+        return self::$instance;
     }
 
     protected function setProperty($properties)
     {
         if($properties) {
-            foreach ($properties as $name => $property) {
-                $this->$name = $property;
+            foreach ($properties as $name => $value) {
+                $this->$name = $value;
             }
         }
     }
