@@ -1,6 +1,6 @@
 <?php
 
-namespace core\base\controllers;
+namespace core\base\controller;
 
 use core\base\settings\Settings;
 use core\base\settings\ShopSettings;
@@ -24,8 +24,8 @@ class RouteController
 
     private function __construct()
     {
-        $s = Settings::instance();
-        $s1 = ShopSettings::instance();
+
+
         exit();
     }
 }
