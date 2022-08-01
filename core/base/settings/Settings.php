@@ -8,8 +8,8 @@ class Settings
 
     private $routes = [
         'admin' => [
-            'name'  => 'admin',
-            'path'  => 'core/admin/controllers/',
+            'alias' => 'admin',
+            'path'  => 'core/admin/controller/',
             'hrUrl' => false
         ],
         'settings' => [
@@ -20,9 +20,11 @@ class Settings
             'hrUrl' => false
         ],
         'user' => [
-            'path'   => 'core/user/controllers/',
+            'path'   => 'core/user/controller/',
             'hrUrl'  => true,
-            'routes' => []
+            'routes' => [
+                'catalog' => 'site'
+            ]
         ],
         'default' => [
             'controller'   => 'IndexController',
@@ -70,7 +72,7 @@ class Settings
                 continue;
             }
 
-            if(!$settingsPropertyValue) $baseProperties[$settingsPropertyName] = $this->$settingsPropertyName;
+            if(!$parentPropertyValue) $baseProperties[$settingsPropertyName] = $this->$settingsPropertyName;
         }
 
         return $baseProperties;
