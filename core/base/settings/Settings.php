@@ -8,7 +8,7 @@ class Settings
 
     private $routes = [
         'admin' => [
-            'name'  => 'admin',
+            'alias' => 'admin',
             'path'  => 'core/admin/controller/',
             'hrUrl' => false
         ],
@@ -22,7 +22,9 @@ class Settings
         'user' => [
             'path'   => 'core/user/controller/',
             'hrUrl'  => true,
-            'routes' => []
+            'routes' => [
+                'catalog' => 'site'
+            ]
         ],
         'default' => [
             'controller'   => 'IndexController',
