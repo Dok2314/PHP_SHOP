@@ -99,7 +99,7 @@ class RouteController
 
             $this->createRoute($route, $url);
 
-            if($url[1]) {
+            if(isset($url[1])) {
                 $count = count($url);
                 $key   = '';
 
@@ -110,7 +110,11 @@ class RouteController
                     $i = 2;
                 }
 
-                for(;$i < $count; $i++) {
+                //Делаю цикл, в котором после каждой итерации обновляю $key = '', изначально ключ пуст
+                // и я записываю в него $key = 'color',
+                // следующая итерация он не пуст, я записываю в параметры
+                // $this->parameters[$key] = $url[$i]; = $this->parameters['color'] = 'red'; и обнуляю ключ
+                for( ; $i < $count; $i++) {
                     if(!$key) {
                         $key = $url[$i];
                         $this->parameters[$key] = '';
@@ -120,8 +124,6 @@ class RouteController
                     }
                 }
             }
-
-            exit();
         }else {
             try {
                 throw new \Exception('Не корректная директория сайта!');
@@ -144,7 +146,7 @@ class RouteController
                 $this->controller .= ucfirst($url[0].'Controller');
             }
         }else {
-            $this->controller = $this->routes['default']['controller'];
+            $this->controller .= $this->routes['default']['controller'];
         }
 
         $this->inputMethod  = $route[1] ?? $this->routes['default']['inputMethod'];
