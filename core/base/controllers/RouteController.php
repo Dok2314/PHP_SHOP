@@ -7,13 +7,20 @@ use core\base\settings\ShopSettings;
 
 class RouteController
 {
-    private static $instance;
+    static private $instance;
 
     private function __clone()
     {
     }
 
-    public static function instance(): RouteController
+    private function __construct()
+    {
+        $settings = Settings::instance();
+        $shopSettings = ShopSettings::instance();
+
+    }
+
+    static public function instance(): RouteController
     {
         if(self::$instance instanceof self) {
             return self::$instance;
@@ -24,14 +31,5 @@ class RouteController
 
     public function route()
     {
-    }
-
-    private function __construct()
-    {
-        $settings     = Settings::instance();
-        $shopSettings = ShopSettings::instance();
-
-//        var_dump($shopSettings::get('routes'));
-//        var_dump($settings::get('routes'));
     }
 }

@@ -5,6 +5,7 @@ namespace core\base\settings;
 class ShopSettings
 {
     static private $instance;
+
     private $baseSettings;
 
     private $routes = [
@@ -17,21 +18,16 @@ class ShopSettings
     ];
 
     private $templateArr = [
-        'text'      => ['price','short'],
-        'textarea'  => ['goods_content']
+        'text'     => ['price', 'short'],
+        'textarea' => ['goods_content']
     ];
-
-    private function __clone()
-    {
-    }
 
     private function __construct()
     {
     }
 
-    static public function get($property)
+    private function __clone()
     {
-        return self::instance()->$property ?? null;
     }
 
     static public function instance(): ShopSettings
@@ -46,6 +42,16 @@ class ShopSettings
         self::$instance->setProperty($baseProperties);
 
         return self::$instance;
+    }
+
+    static public function getPropertyByName($propertyName)
+    {
+        return self::instance()->has($propertyName);
+    }
+
+    protected function has($property)
+    {
+        return $this->$property ?? null;
     }
 
     protected function setProperty($properties)
