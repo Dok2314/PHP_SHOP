@@ -4,16 +4,18 @@ namespace core\base\settings;
 
 class Settings
 {
+    static private $instance;
+
     private $routes = [
         'admin' => [
-            'name'   => 'admin',
-            'path'   => 'core/admin/controllers/',
-            'hrUrl'  => false
+            'name'  => 'admin',
+            'path'  => 'core/admin/controllers/',
+            'hrUrl' => false
         ],
         'settings'  => [
             'path' => 'core/base/settings/'
         ],
-        'plugins' => [
+        'plugins'  => [
             'path'  => 'core/plugins/',
             'hrUrl' => false
         ],
@@ -22,7 +24,7 @@ class Settings
             'hrUrl'  => true,
             'routes' => []
         ],
-        'default' => [
+        'default'  => [
             'controller'   => 'IndexController',
             'inputMethod'  => 'inputData',
             'outputMethod' => 'outputData'
@@ -30,13 +32,19 @@ class Settings
     ];
 
     private $templateArr = [
-        'text'      => ['name', 'phone', 'address'],
-        'textarea'  => ['content', 'keywords']
+        'text'     => ['name', 'phone', 'address'],
+        'textarea' => ['content', 'keywords']
     ];
 
     private $lalala = 'lalala';
 
-    static private $instance;
+    private function __construct()
+    {
+    }
+
+    private function __clone()
+    {
+    }
 
     static public function instance(): Settings
     {
@@ -47,32 +55,29 @@ class Settings
         return self::$instance = new self;
     }
 
-    static public function get($property)
+    static public function getPropertyByName($propertyName)
     {
-        return self::instance()->$property ?? null;
+        return self::instance()->has($propertyName);
     }
 
-    private function __construct()
+    protected function has($property)
     {
+        return $this->$property ?? null;
     }
 
-    private function __clone()
-    {
-    }
-
-    public function glueProperties($class)
+    public function glueProperties($resultingClass)
     {
         $baseProperties = [];
 
-        foreach ($this as $name => $value) {
-            $property = $class::get($name);
+        foreach ($this as $propertyName => $propertyValue) {
+            $propertyValueFromResultingClass = $resultingClass::getPropertyByName($propertyName);
 
-            if(is_array($property) && is_array($value)) {
-                $baseProperties[$name] = $this->arrayMergeRecursive($value, $property);
+            if(is_array($propertyValue) && is_array($propertyValueFromResultingClass)) {
+                $baseProperties[$propertyName] = $this->arrayMergeRecursive($propertyValue, $propertyValueFromResultingClass);
                 continue;
             }
 
-            if(!$property) $baseProperties[$name] = $this->$name;
+            if(!$propertyValueFromResultingClass) $baseProperties[$propertyName] = $propertyValue;
         }
 
         return $baseProperties;
