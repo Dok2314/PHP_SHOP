@@ -117,7 +117,6 @@ class RouteController
                         $key = '';
                     }
                 }
-                var_dump($this->parameters);
             }
         }else{
             try {
