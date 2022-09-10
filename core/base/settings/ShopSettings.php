@@ -10,7 +10,7 @@ class ShopSettings
 
     private $routes = [
         'admin' => [
-            'name' => 'sudo'
+            'alias' => 'sudo'
         ],
         'vasya' => [
             'name' => 'vasya'
