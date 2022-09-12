@@ -97,7 +97,6 @@ class RouteController
             // Parameters
             if(isset($url[1])) {
                 $count = count($url);
-
                 $key = '';
 
                 if(!$hrUrl) {
