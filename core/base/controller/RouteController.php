@@ -42,40 +42,39 @@ class RouteController
             // $this->redirect(rtrim($address_str, '/'), 301);
         }
 
-        $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'],'index.php'));
+        $path = substr($_SERVER['PHP_SELF'], 0, strpos($_SERVER['PHP_SELF'], 'index.php'));
 
         if($path === PATH) {
             $this->routes = Settings::getPropertyByName('routes');
 
-            if(!$this->routes) throw new RouteException("Сайт находится на техническом обслуживании!");
+            if(!$this->routes) throw new RouteException('Сайт находится на техническом обслуживании!');
 
             if(strpos($address_str, $this->routes['admin']['alias']) === strlen(PATH)) {
-                //ADMIN PANEL
+                $url = explode('/', substr($address_str, strlen(PATH.$this->routes['admin']['alias']) + 1));
 
-                $url = explode('/', substr($address_str, strlen(PATH.$this->routes['admin']['alias']) +1));
-
-                if(isset($url[0]) && is_dir($_SERVER['DOCUMENT_ROOT'] . PATH . $this->routes['plugins']['path'].$url[0])) {
-                    // Plugins
-
+                if(!empty($url[0]) && is_dir($_SERVER['DOCUMENT_ROOT'] . PATH . $this->routes['plugins']['path'] . $url[0])) {
+                    // PLUGIN
                     $plugin = array_shift($url);
 
-                    $pluginSettings = $this->routes['settings']['path'].ucfirst($plugin.'Settings');
+                    $pluginSettings = $this->routes['settings']['path'] . ucfirst($plugin.'Settings');
 
                     if(file_exists($_SERVER['DOCUMENT_ROOT'] . PATH . $pluginSettings . '.php')) {
-                        $pluginSettings = str_replace('/', '\\', $pluginSettings);
+                        $pluginSettings = str_replace('/','\\', $pluginSettings);
 
                         $this->routes = $pluginSettings::getPropertyByName('routes');
-
-                        $dir = $this->routes['plugins']['dir'] ? '/' . $this->routes['plugins']['dir'] . '/' : '/';
-                        $dir = str_replace('//','/', $dir);
-
-                        $this->controller = $this->routes['plugins']['path'] . $plugin . $dir;
-
-                        $hrUrl = $this->routes['plugins']['hrUrl'];
-
-                        $route = 'plugins';
                     }
+
+                    // $dir - если захотим хранить контроллеры плагинов в отдельной папке, а не в папке с названием = названию плагина
+                    $dir = $this->routes['plugins']['dir'] ? '/' . $this->routes['plugins']['dir'] . '/' : '/';
+                    $dir = str_replace('//', '/', $dir);
+
+                    $this->controller = $this->routes['plugins']['path'] . $plugin . $dir;
+
+                    $hrUrl = $this->routes['plugins']['hrUrl'];
+
+                    $route = 'plugins';
                 }else{
+                    // ADMIN PANEL
                     $this->controller = $this->routes['admin']['path'];
 
                     $hrUrl = $this->routes['admin']['hrUrl'];
@@ -83,7 +82,7 @@ class RouteController
                     $route = 'admin';
                 }
             }else{
-                // User
+                // USER
                 $url = explode('/', substr($address_str, strlen(PATH)));
 
                 $hrUrl = $this->routes['user']['hrUrl'];
@@ -120,7 +119,7 @@ class RouteController
             }
         }else{
             try {
-                throw new \Exception("Неверная директория сайта!");
+                throw new \Exception('Не корректная директория сайта!');
             }catch (\Exception $e) {
                 exit($e->getMessage());
             }
