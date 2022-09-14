@@ -100,8 +100,10 @@ class RouteController
                 $key = '';
 
                 if(!$hrUrl) {
+                    // WITHOUT HUMAN READABLE URL
                     $i = 1;
                 }else{
+                    // FOR HUMAN READABLE URL
                     $this->parameters['alias'] = $url[1];
                     $i = 2;
                 }
@@ -115,6 +117,7 @@ class RouteController
                         $key = '';
                     }
                 }
+                var_dump($this->parameters);
             }
         }else{
             try {
