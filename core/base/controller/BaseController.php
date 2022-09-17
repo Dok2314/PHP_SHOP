@@ -32,6 +32,5 @@ abstract class BaseController
 
     public function request($args)
     {
-
     }
 }
