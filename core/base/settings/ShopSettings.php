@@ -10,7 +10,7 @@ class ShopSettings
 
     private $routes = [
         'plugins'  => [
-            'dir'    => false,
+            'dir'    => 'controller',
             'routes' => []
         ]
     ];
