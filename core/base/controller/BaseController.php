@@ -7,6 +7,8 @@ use core\base\settings\Settings;
 
 abstract class BaseController
 {
+    use BaseMethods;
+
     protected $page;
     protected $errors;
 
@@ -20,14 +22,13 @@ abstract class BaseController
         extract($parameters);
 
         if(!$path) {
-
             $class = new \ReflectionClass($this);
 
             $space  = str_replace('\\','/',$class->getNamespaceName() . '\\');
             $routes = Settings::getPropertyByName('routes');
 
             if($space === $routes['user']['path']) $template = TEMPLATE;
-                else $template = ADMIN_TEMPLATE;
+            else $template = ADMIN_TEMPLATE;
 
             $path = $template . explode('controller', strtolower($class->getShortName()))[0];
         }
