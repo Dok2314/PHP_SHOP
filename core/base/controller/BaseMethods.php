@@ -4,30 +4,6 @@ namespace core\base\controller;
 
 trait BaseMethods
 {
-    protected $styles;
-    protected $scripts;
-
-    protected function init($admin = false)
-    {
-        if(!$admin) {
-            if(USER_CSS_JS['styles']) {
-                foreach(USER_CSS_JS['styles'] as $style) $this->styles[] = PATH . TEMPLATE . trim($style, '/');
-            }
-
-            if(USER_CSS_JS['scripts']) {
-                foreach(USER_CSS_JS['scripts'] as $script) $this->scripts[] = PATH . TEMPLATE . trim($script, '/');
-            }
-        }else{
-            if(ADMIN_CSS_JS['styles']) {
-                foreach(ADMIN_CSS_JS['styles'] as $style) $this->styles[] = PATH . TEMPLATE . trim($style, '/');
-            }
-
-            if(ADMIN_CSS_JS['scripts']) {
-                foreach(ADMIN_CSS_JS['scripts'] as $script) $this->styles[] = PATH . TEMPLATE . trim($script, '/');
-            }
-        }
-    }
-
     protected function clearStr($str)
     {
         if(is_array($str)) {
@@ -75,6 +51,7 @@ trait BaseMethods
 
         $str = $event . ": " . $dateTime->format("d-m-Y G:i:s") . " - " . $message . "\r\n";
 
+        // FILE_APPEND - позволяет дозаписывать информацию в файл, так как по дефолту происходит перезапись
         file_put_contents("log/" . $file, $str, FILE_APPEND);
     }
 }

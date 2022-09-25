@@ -7,22 +7,9 @@ use core\base\settings\Settings;
 
 class RouteController extends BaseController
 {
-    static private $instance;
+    use Singleton;
 
     protected array $routes;
-
-    private function __clone()
-    {
-    }
-
-    static public function instance(): RouteController
-    {
-        if(self::$instance instanceof self) {
-            return self::$instance;
-        }
-
-        return self::$instance = new self;
-    }
 
     private function __construct()
     {

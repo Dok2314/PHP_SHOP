@@ -2,9 +2,11 @@
 
 namespace core\base\settings;
 
+use core\base\controller\Singleton;
+
 class ShopSettings
 {
-    static private $instance;
+    use Singleton;
 
     private $baseSettings;
 
@@ -20,22 +22,13 @@ class ShopSettings
         'textarea' => ['goods_content']
     ];
 
-    private function __construct()
-    {
-    }
-
-    private function __clone()
-    {
-    }
-
-    static public function instance(): ShopSettings
+    static private function getInstance(): ShopSettings
     {
         if(self::$instance instanceof self) {
             return self::$instance;
         }
 
-        self::$instance = new self;
-        self::$instance->baseSettings = Settings::instance();
+        self::instance()->baseSettings = Settings::instance();
         $baseProperties = self::$instance->baseSettings->glueProperties(get_class());
         self::$instance->setProperty($baseProperties);
 
@@ -44,7 +37,7 @@ class ShopSettings
 
     static public function getPropertyByName($propertyName)
     {
-        return self::instance()->has($propertyName);
+        return self::getInstance()->has($propertyName);
     }
 
     protected function has($property)

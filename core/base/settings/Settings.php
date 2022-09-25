@@ -2,9 +2,11 @@
 
 namespace core\base\settings;
 
+use core\base\controller\Singleton;
+
 class Settings
 {
-    static private $instance;
+    use Singleton;
 
     private $routes = [
         'admin' => [
@@ -40,23 +42,6 @@ class Settings
     ];
 
     private $lalala = 'lalala';
-
-    private function __construct()
-    {
-    }
-
-    private function __clone()
-    {
-    }
-
-    static public function instance(): Settings
-    {
-        if(self::$instance instanceof self) {
-            return self::$instance;
-        }
-
-        return self::$instance = new self;
-    }
 
     static public function getPropertyByName($propertyName)
     {
