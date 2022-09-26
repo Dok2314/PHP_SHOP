@@ -7,22 +7,9 @@ use core\base\settings\Settings;
 
 class RouteController extends BaseController
 {
-    static private $instance;
+    use Singleton;
 
     protected array $routes;
-
-    private function __clone()
-    {
-    }
-
-    static public function instance(): RouteController
-    {
-        if(self::$instance instanceof self) {
-            return self::$instance;
-        }
-
-        return self::$instance = new self;
-    }
 
     private function __construct()
     {
@@ -37,7 +24,7 @@ class RouteController extends BaseController
         if($path === PATH) {
             $this->routes = Settings::getPropertyByName('routes');
 
-            if(!$this->routes) throw new RouteException('Сайт находится на техническом обслуживании!');
+            if(!$this->routes) throw new RouteException('Отсутствуют маршруты в базовых настройках!', 1);
 
             $url = explode('/', substr($address_str, strlen(PATH)));
 
@@ -110,11 +97,7 @@ class RouteController extends BaseController
                 }
             }
         }else{
-            try {
-                throw new \Exception('Не корректная директория сайта!');
-            }catch (\Exception $e) {
-                exit($e->getMessage());
-            }
+            throw new RouteException('Не корректная директория сайта!', 1);
         }
     }
 

@@ -8,5 +8,6 @@ class IndexController extends BaseController
 {
     protected function inputData()
     {
+
     }
 }
