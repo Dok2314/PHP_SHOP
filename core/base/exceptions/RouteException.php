@@ -6,9 +6,9 @@ use core\base\controller\BaseMethods;
 
 class RouteException extends \Exception
 {
-    protected array $messages = [];
-
     use BaseMethods;
+
+    protected array $messages = [];
 
     public function __construct($message = "", $code = 0)
     {
