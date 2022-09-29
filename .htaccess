@@ -7,6 +7,7 @@ DirectoryIndex index.php
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
+#!favicon.ico - перенаправлять на index.php все запросы, которые не являются favicon.ico
 RewriteCond %{REQUEST_FILENAME} !favicon.ico
 
 RewriteRule ^(.*) index.php
