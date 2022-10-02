@@ -10,9 +10,17 @@ class IndexController extends BaseController
     protected function inputData()
     {
         $db    = Model::instance();
-        $query = "SELECT name FROM articles";
-        $res   = $db->query($query);
 
-        var_dump($res);
+        $table = 'teachers';
+
+        $res = $db->get($table, [
+            'fields'          => ['id', 'name'],
+            'where'           => ['id' => 1, 'name' => 'Petr Olegovich'],
+            'operand'         => ['=', '<>'],
+            'condition'       => ['AND'],
+            'order'           => ['fio', 'name'],
+            'order_direction' => ['ASC', 'DESC'],
+            'limit'           => '1'
+        ]);
     }
 }
