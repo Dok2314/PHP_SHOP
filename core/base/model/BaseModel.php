@@ -27,10 +27,10 @@ class BaseModel
     {
         $result = $this->db->query($query);
 
-        //affected_rows - затронуто рядов, "-1" - обозначает ошибку
+        //affected_rows - число строк, затронутых предыдущей операцией MySQL, "-1" - обозначает ошибку
         if($this->db->affected_rows === -1) {
             throw new DbException('Ошибка в SQL запросе: '
-            . $query . ' - ' . $this->db->errno . ' ' . $this->db->error
+                . $query . ' - ' . $this->db->errno . ' ' . $this->db->error
             );
         }
 

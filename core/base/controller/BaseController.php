@@ -97,13 +97,13 @@ abstract class BaseController
     {
         $this->parameters = $args['parameters'];
 
-        $inputData  = $args['inputMethod'];
-        $outputData = $args['outputMethod'];
+        $inputMethod  = $args['inputMethod'];
+        $outputMethod = $args['outputMethod'];
 
-        $data = $this->$inputData();
+        $data = $this->$inputMethod();
 
-        if(method_exists($this, $outputData)) {
-            $page = $this->$outputData($data);
+        if(method_exists($this, $outputMethod)) {
+            $page = $this->$outputMethod($data);
 
             if($page) $this->page = $page;
         } elseif ($data) {
