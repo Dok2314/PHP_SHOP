@@ -99,4 +99,50 @@ class BaseModel
 
         return $this->query($query);
     }
+
+    protected function createFields($table = false, $set)
+    {
+        $set['fields'] = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : ['*'];
+
+        $table = $table . '.' ?? '';
+
+        $fields = '';
+
+        foreach ($set['fields'] as $field) {
+            $fields .= $table . $field . ',';
+        }
+
+        return $fields;
+    }
+
+    protected function createOrder($table = false, $set)
+    {
+        $table = $table . '.' ?? '';
+
+        $orderBy = '';
+
+        if(isset($set['order']) && is_array($set['order'])) {
+            $set['order_direction'] = (isset($set['order_direction']) && is_array($set['order_direction']))
+                ? $set['order_direction'] : ['ASC'];
+
+            $orderBy = 'ORDER BY';
+
+            $direct_count = 0;
+
+            foreach ($set['order'] as $order) {
+                if($set['order_direction'][$direct_count]) {
+                    $order_direction = strtoupper($set['order_direction'][$direct_count]);
+                    $direct_count++;
+                }else{
+                    $order_direction = strtoupper($set['order_direction'][$direct_count - 1]);
+                }
+
+                $orderBy .= $table . $order . ' ' . $order_direction . ',';
+            }
+
+            $orderBy = rtrim($orderBy, ',');
+        }
+
+        return $orderBy;
+    }
 }
