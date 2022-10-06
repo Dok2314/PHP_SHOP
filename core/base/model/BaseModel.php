@@ -125,7 +125,7 @@ class BaseModel
             $set['order_direction'] = (isset($set['order_direction']) && is_array($set['order_direction']))
                 ? $set['order_direction'] : ['ASC'];
 
-            $orderBy = 'ORDER BY';
+            $orderBy = 'ORDER BY ';
 
             $direct_count = 0;
 
@@ -137,10 +137,10 @@ class BaseModel
                     $order_direction = strtoupper($set['order_direction'][$direct_count - 1]);
                 }
 
-                $orderBy .= $table . $order . ' ' . $order_direction . ',';
+                $orderBy .= $table . $order . ' ' . $order_direction . ', ';
             }
 
-            $orderBy = rtrim($orderBy, ',');
+            $orderBy = rtrim($orderBy, ', ');
         }
 
         return $orderBy;
