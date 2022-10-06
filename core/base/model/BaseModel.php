@@ -126,14 +126,15 @@ class BaseModel
                 ? $set['order_direction'] : ['ASC'];
 
             $orderBy = 'ORDER BY ';
+
             $direct_count = 0;
 
             foreach ($set['order'] as $order) {
-                if(isset($set['order_direction'][$direct_count])){
-                    $order_direction = $set['order_direction'][$direct_count];
+                if($set['order_direction'][$direct_count]) {
+                    $order_direction = strtoupper($set['order_direction'][$direct_count]);
                     $direct_count++;
                 }else{
-                    $order_direction = $set['order_direction'][$direct_count - 1];
+                    $order_direction = strtoupper($set['order_direction'][$direct_count - 1]);
                 }
 
                 $orderBy .= $table . $order . ' ' . $order_direction . ', ';
