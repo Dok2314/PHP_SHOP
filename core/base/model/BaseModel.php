@@ -145,4 +145,56 @@ class BaseModel
 
         return $orderBy;
     }
+
+    protected function createWhere($table = false, $set, $instraction = 'WHERE')
+    {
+        $table = $table . '.' ?? '';
+
+        $where = '';
+
+        if(isset($set['where']) && is_array($set['where'])) {
+            $set['operand']   = (isset($set['operand']) && is_array($set['operand'])) ? $set['operand'] : ['='];
+            $set['condition'] = (isset($set['condition']) && is_array($set['condition'])) ? $set['condition'] : ['AND'];
+
+            $where = $instraction;
+
+            $operand_count   = 0;
+            $condition_count = 0;
+
+            foreach ($set['where'] as $key => $value) {
+                $where .= ' ';
+
+                if(isset($set['operand'][$operand_count])) {
+                    $operand = $set['operand'][$operand_count];
+                    $operand_count++;
+                }else{
+                    $operand = $set['operand'][$operand_count - 1];
+                }
+
+                if(isset($set['condition'][$condition_count])) {
+                    $condition = $set['condition'][$condition_count];
+                    $condition_count++;
+                }else{
+                    $condition = $set['condition'][$condition_count - 1];
+                }
+
+                if($operand === 'IN' || $operand === 'NOT IN') {
+                    if(is_string($value) && strpos($value, 'SELECT')) {
+                        $in_str = $value;
+                    }else{
+                        if(is_array($value)) $temp_value = $value;
+                            else $temp_value = explode(',', $value);
+
+                        $in_str = '';
+
+                        foreach ($temp_value as $v) {
+                            $in_str .= "'" . trim($v) . "',";
+                        }
+                    }
+
+                    $where .= $table . $key . ' ' . $operand . ' (' . trim($in_str, ',') . ') ' . $condition;
+                }
+            }
+        }
+    }
 }
