@@ -193,8 +193,32 @@ class BaseModel
                     }
 
                     $where .= $table . $key . ' ' . $operand . ' (' . trim($in_str, ',') . ') ' . $condition;
+                }elseif(strpos($operand, 'LIKE') !== false) {
+                    $like_template = explode('%', $operand);
+
+                    foreach ($like_template as $lt_key => $lt_value) {
+                        if(!$lt_value) {
+                            if(!$lt_key) {
+                                $value = '%' . $value;
+                            }else{
+                                $value .= '%';
+                            }
+                        }
+                    }
+
+                    $where .= $table . $key . ' LIKE ' . "'" . $value . "' $condition";
+                }else{
+                    if(strpos($value, 'SELECT') === 0) {
+                        $where .= $table . $key . $operand . '(' . $value . ") $condition";
+                    }else{
+                        $where .= $table . $key . $operand . "'" . $value . "' $condition";
+                    }
                 }
             }
+
+            $where = substr($where, 0, strrpos($where, $condition));
         }
+
+        return $where;
     }
 }
