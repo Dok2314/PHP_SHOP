@@ -146,7 +146,7 @@ class BaseModel
         return $orderBy;
     }
 
-    protected function createWhere($table = false, $set, $instraction = 'WHERE')
+    protected function createWhere($table = false, $set, $instruction = 'WHERE')
     {
         $table = $table . '.' ?? '';
 
@@ -156,7 +156,7 @@ class BaseModel
             $set['operand']   = (isset($set['operand']) && is_array($set['operand'])) ? $set['operand'] : ['='];
             $set['condition'] = (isset($set['condition']) && is_array($set['condition'])) ? $set['condition'] : ['AND'];
 
-            $where = $instraction;
+            $where = $instruction;
 
             $operand_count   = 0;
             $condition_count = 0;
@@ -179,14 +179,17 @@ class BaseModel
                 }
 
                 if($operand === 'IN' || $operand === 'NOT IN') {
+                    //Если в $value находится SELECT, то оборачиваем его в "(SELECT ...)" и формируем $where
                     if(is_string($value) && strpos($value, 'SELECT')) {
                         $in_str = $value;
                     }else{
+                        // В любом случае делаю массив $temp_value
                         if(is_array($value)) $temp_value = $value;
                             else $temp_value = explode(',', $value);
 
                         $in_str = '';
 
+                        // Оборачиваем значения в "'$v'"
                         foreach ($temp_value as $v) {
                             $in_str .= "'" . trim($v) . "',";
                         }
@@ -197,6 +200,8 @@ class BaseModel
                     $like_template = explode('%', $operand);
 
                     foreach ($like_template as $lt_key => $lt_value) {
+                        //Если нет $lt_value - значит в нём пустая строка и был '%',
+                        // проверяем ключ,если его нет, значит он = 0, значит нужно приклеить '%' в начало сторки
                         if(!$lt_value) {
                             if(!$lt_key) {
                                 $value = '%' . $value;
@@ -208,6 +213,8 @@ class BaseModel
 
                     $where .= $table . $key . ' LIKE ' . "'" . $value . "' $condition";
                 }else{
+                    // Проверяем если SELECT стоит в начале строки
+                    // оборачиваем его в скобки (SELECT...)
                     if(strpos($value, 'SELECT') === 0) {
                         $where .= $table . $key . $operand . '(' . $value . ") $condition";
                     }else{
