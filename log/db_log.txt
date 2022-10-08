@@ -158,3 +158,15 @@ Fault: 08-10-2022 20:38:43 - Ошибка в SQL запросе: SELECT teachers
 file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
 In line 32
 
+Fault: 08-10-2022 20:39:12 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' AND join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'php_mvc_shop.join_table1' doesn't exist
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:54:52 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name='O\'Raily'   LIMIT  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:55:59 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name='O\'Raily'   LIMIT  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+

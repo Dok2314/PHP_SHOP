@@ -119,7 +119,8 @@ class BaseModel
 
         $fields = rtrim($fields,',');
 
-        $limit = 'LIMIT ' . $set['limit'] ?? '';
+        if(isset($set['limit'])) $limit = 'LIMIT ' . $set['limit'];
+            else $limit = '';
 
         $query = "SELECT $fields FROM $table $join $where $order $limit";
 
