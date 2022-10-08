@@ -26,7 +26,33 @@ class IndexController extends BaseController
             'condition'       => ['AND', 'OR'],
             'order'           => ['fio', 'name'],
             'order_direction' => ['DESC'],
-            'limit'           => '1'
+            'limit'           => '1',
+            'join'            => [
+                'join' => [
+                    'table'     => 'join_table1',
+                    'fields'    => ['id as j_id', 'name as j_name'],
+                    'type'      => 'left',
+                    'where'     => ['name' => 'Sasha'],
+                    'operand'   => ['='],
+                    'condition' => ['OR'],
+                    'on'        => [
+                        'table'  => 'teachers',
+                        'fields' => ['id', 'parent_id']
+                    ]
+                ],
+                'join_table' => [
+                    'table'     => 'join_table2',
+                    'fields'    => ['id as j_id', 'name as j_name'],
+                    'type'      => 'left',
+                    'where'     => ['name' => 'Sasha'],
+                    'operand'   => ['='],
+                    'condition' => ['OR'],
+                    'on'        => [
+                        'table'  => 'teachers',
+                        'fields' => ['id', 'parent_id']
+                    ]
+                ]
+            ]
         ]);
     }
 }
