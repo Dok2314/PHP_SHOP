@@ -21,14 +21,14 @@ class IndexController extends BaseController
 
         $res = $db->get($table, [
             'fields'          => ['id', 'name'],
-            'where'           => ['name' => 'masha, olya, sveta', 'surname' => 'Sergeevna', 'fio' => 'Andrey', 'car' => 'Porsche', 'color' => $colors],
-            'operand'         => ['IN', 'LIKE%', '<>', '=', 'NOT IN'],
-            'condition'       => ['AND', 'OR'],
-            'order'           => ['fio', 'name'],
+            'where'           => ['name' => "O'Raily"],
+//            'operand'         => ['IN', '<>'],
+//            'condition'       => ['AND', 'OR'],
+            'order'           => ['name'],
             'order_direction' => ['DESC'],
             'limit'           => '1',
             'join'            => [
-                'join' => [
+                [
                     'table'     => 'join_table1',
                     'fields'    => ['id as j_id', 'name as j_name'],
                     'type'      => 'left',
@@ -40,19 +40,20 @@ class IndexController extends BaseController
                         'fields' => ['id', 'parent_id']
                     ]
                 ],
-                'join_table' => [
-                    'table'     => 'join_table2',
-                    'fields'    => ['id as j_id', 'name as j_name'],
-                    'type'      => 'left',
-                    'where'     => ['name' => 'Sasha'],
-                    'operand'   => ['='],
-                    'condition' => ['OR'],
-                    'on'        => [
-                        'table'  => 'teachers',
-                        'fields' => ['id', 'parent_id']
-                    ]
-                ]
+//                'join_table2' => [
+//                    'table'     => 'join_table2',
+//                    'fields'    => ['id as j_id', 'name as j_name'],
+//                    'type'      => 'left',
+//                    'where'     => ['name' => 'Sasha'],
+//                    'operand'   => ['<>'],
+//                    'condition' => ['AND'],
+//                    'on'        => [
+//                        'table'  => 'teachers',
+//                        'fields' => ['id', 'parent_id']
+//                    ]
+//                ]
             ]
         ]);
+        exit("I am admin panel!");
     }
 }

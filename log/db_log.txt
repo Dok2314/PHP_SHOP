@@ -42,3 +42,119 @@ Fault: 08-10-2022 18:00:25 - Ошибка в SQL запросе: SELECT teachers
 file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
 In line 32
 
+Fault: 08-10-2022 18:02:51 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table.id as j_id,join_table.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_table.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table.name='Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_tabl' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 19:57:34 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table.id as j_id,join_table.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_table.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table.name='Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_tabl' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 19:58:16 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table.id as j_id,join_table.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_table.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table.name='Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_tabl' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:01:50 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table.id as j_id,join_table.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_table.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table.name='Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_tabl' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:03:57 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table.id as j_id,join_table.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_table.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table.name='Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_tabl' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:04:27 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table.id as j_id,join_table.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_table.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table.name='Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table ON teachers.id=join_tabl' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:06:17 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join.id as j_id,join.name as j_name,join_table2.id as j_id,join_table2.name as j_name FROM teachers LEFT JOIN join ON teachers.id=join.parent_id LEFT JOIN join_table2 ON teachers.id=join_table2.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join.name='Sasha' Array join_table2.name<>'Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'join ON teachers.id=join.parent_id LEFT JOIN join_table2 ON teachers.id=join_tab' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:06:29 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black')  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:06:56 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name,join_table2.id as j_id,join_table2.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id LEFT JOIN join_table2 ON teachers.id=join_table2.parent_id WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black') Array join_table1.name='Sasha' Array join_table2.name<>'Sasha'  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha' Array join_table2.name<>'Sasha'  ORDER BY teacher' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:07:07 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname LIKE 'Sergeevna%' OR teachers.fio<>'Andrey' OR teachers.car='Porsche' OR teachers.color NOT IN ('red','green','blue','black')  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:15:59 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname<>(SELECT name FROM students WHERE id = 1)  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:16:05 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name IN ('masha','olya','sveta') AND teachers.surname<>(SELECT name FROM students WHERE id = 1)  ORDER BY teachers.fio DESC, teachers.name DESC 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:24:00 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name='O'Raily'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Raily'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:26:14 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name='O'Raily'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Raily'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:27:04 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE teachers.name='O'Raily'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Raily'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:35:51 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:35:53 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:35:53 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:35:54 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:36:13 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:36:19 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:36:28 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:36:43 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:36:54 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:37:31 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'php_mvc_shop.join_table1' doesn't exist
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:37:42 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'php_mvc_shop.join_table1' doesn't exist
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:38:36 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' AND join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'php_mvc_shop.join_table1' doesn't exist
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:38:41 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1' at line 1
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+
+Fault: 08-10-2022 20:38:43 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers LEFT JOIN join_table1 ON teachers.id=join_table1.parent_id WHERE teachers.name='O\'Raily' AND join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'php_mvc_shop.join_table1' doesn't exist
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 32
+

@@ -104,30 +104,29 @@ class BaseModel
      */
     final public function get(string $table, array $set = [])
     {
-        $fields = $this->createFields($table, $set);
-        $where  = $this->createWhere($table, $set);
+        $fields = $this->createFields($set, $table);
+        $order  = $this->createOrder($set, $table);
+        $where  = $this->createWhere($set, $table);
 
         if(!$where) $newWhere = true;
             else $newWhere = false;
 
-        $join_arr = $this->createJoin($table, $set, $newWhere);
+        $join_arr = $this->createJoin($set, $table, $newWhere);
 
         $fields .= $join_arr['fields'];
         $join    = $join_arr['join'];
         $where  .= $join_arr['where'];
 
-        $order = $this->createOrder($table, $set);
-
         $fields = rtrim($fields,',');
 
-        $limit = $set['limit'] ?? '';
+        $limit = 'LIMIT ' . $set['limit'] ?? '';
 
         $query = "SELECT $fields FROM $table $join $where $order $limit";
 
         return $this->query($query);
     }
 
-    protected function createFields($table = false, $set)
+    protected function createFields($set, $table = false)
     {
         $set['fields'] = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : ['*'];
 
@@ -142,7 +141,7 @@ class BaseModel
         return $fields;
     }
 
-    protected function createOrder($table = false, $set)
+    protected function createOrder($set, $table = false)
     {
         $table = $table . '.' ?? '';
 
@@ -174,7 +173,7 @@ class BaseModel
         return $orderBy;
     }
 
-    protected function createWhere($table = false, $set, $instruction = 'WHERE')
+    protected function createWhere($set, $table = false, $instruction = 'WHERE')
     {
         $table = $table . '.' ?? '';
 
@@ -208,7 +207,7 @@ class BaseModel
 
                 if($operand === 'IN' || $operand === 'NOT IN') {
                     //Если в $value находится SELECT, то оборачиваем его в "(SELECT ...)" и формируем $where
-                    if(is_string($value) && strpos($value, 'SELECT')) {
+                    if(is_string($value) && strpos($value, 'SELECT') === 0) {
                         $in_str = $value;
                     }else{
                         // В любом случае делаю массив $temp_value
@@ -219,7 +218,7 @@ class BaseModel
 
                         // Оборачиваем значения в "'$v'"
                         foreach ($temp_value as $v) {
-                            $in_str .= "'" . trim($v) . "',";
+                            $in_str .= "'" . addslashes(trim($v)) . "',";
                         }
                     }
 
@@ -240,14 +239,14 @@ class BaseModel
                         }
                     }
 
-                    $where .= $table . $key . ' LIKE ' . "'" . $value . "' $condition";
+                    $where .= $table . $key . ' LIKE ' . "'" . addslashes($value) . "' $condition";
                 }else{
                     // Проверяем если SELECT стоит в начале строки
                     // оборачиваем его в скобки (SELECT...)
                     if(strpos($value, 'SELECT') === 0) {
                         $where .= $table . $key . $operand . '(' . $value . ") $condition";
                     }else{
-                        $where .= $table . $key . $operand . "'" . $value . "' $condition";
+                        $where .= $table . $key . $operand . "'" . addslashes($value) . "' $condition";
                     }
                 }
             }
@@ -258,13 +257,13 @@ class BaseModel
         return $where;
     }
 
-    protected function createJoin($table, $set, $newWhere = false)
+    protected function createJoin($set, $table, $newWhere = false)
     {
         $fields = '';
         $join   = '';
         $where  = '';
 
-        if($set['join']) {
+        if(isset($set['join'])) {
             $join_table = $table;
 
             foreach ($set['join'] as $key => $value) {
@@ -299,7 +298,7 @@ class BaseModel
                             break;
                     }
 
-                    if(!$value['type']) $join .= 'LEFT JOIN';
+                    if(!$value['type']) $join .= 'LEFT JOIN ';
                         else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
 
                     $join .= $key . ' ON ';
@@ -319,11 +318,11 @@ class BaseModel
 
                         $groupCondition = 'WHERE';
                     }else{
-                        $groupCondition = isset($value['group_condition']) ? strtoupper($value['group_condition']) : ['AND'];
+                        $groupCondition = isset($value['group_condition']) ? strtoupper($value['group_condition']) : 'AND';
                     }
 
-                    $fields .= $this->createFields($key, $value);
-                    $where  .= $this->createWhere($key, $value, $groupCondition);
+                    $fields .= $this->createFields($value, $key);
+                    $where  .= $this->createWhere($value, $key, $groupCondition);
                 }
             }
         }
