@@ -16,8 +16,8 @@ class BaseModel
         $this->db = @new \mysqli(HOST,USER,PASSWORD,DB_NAME);
 
         if($this->db->connect_error) {
-            throw new DbException('Ошибка подключения к базе данных: '
-                .$this->db->connect_errno . ' ' . $this->db->connect_error);
+            throw new DbException('<h1 style="color: black;">' . 'Ошибка подключения к базе данных: ' . '</h1>' .
+                '<h3 style="color: red;">' .$this->db->connect_errno . ' ' . $this->db->connect_error . '</h3>');
         }
 
         $this->db->query("SET NAMES UTF8");
@@ -29,8 +29,8 @@ class BaseModel
 
         //affected_rows - число строк, затронутых предыдущей операцией MySQL, "-1" - обозначает ошибку
         if($this->db->affected_rows === -1) {
-            throw new DbException('Ошибка в SQL запросе: '
-                . $query . ' - ' . $this->db->errno . ' ' . $this->db->error
+            throw new DbException('<h1 style="color: black;">'.'Ошибка в SQL запросе: ' . '</h1>' . '<h3 style="color: red;">'
+                . $query . ' - ' . $this->db->errno . ' ' . $this->db->error . '</h3>'
             );
         }
 
@@ -228,9 +228,9 @@ class BaseModel
                     $like_template = explode('%', $operand);
 
                     foreach ($like_template as $lt_key => $lt_value) {
-                        //Если нет $lt_value - значит в нём пустая строка и был '%',
-                        // проверяем ключ,если его нет, значит он = 0, значит нужно приклеить '%' в начало строки
-                        // если ключ есть значит нужно приклеить в конец строки '%'
+                        //Если нет $lt_value - в нём пустая строка и был '%',
+                        // проверяем ключ,если его нет, он = 0, нужно приклеить '%' в начало строки
+                        // если ключ есть - нужно приклеить в конец строки '%'
                         if(!$lt_value) {
                             if(!$lt_key) {
                                 $value = '%' . $value;
@@ -269,13 +269,14 @@ class BaseModel
 
             foreach ($set['join'] as $key => $value) {
                 if(is_int($key)) {
+                    // Делаю ключ равным названию таблицы, или же выхожу из текущей итерации
                     if(!$value['table']) continue;
                         else $key = $value['table'];
                 }
 
                 if($join) $join .= ' ';
 
-                if($value['on']) {
+                if(isset($value['on'])) {
                     $join_fields = [];
 
                     switch (2) {
@@ -299,22 +300,26 @@ class BaseModel
                             break;
                     }
 
+                    // Тип присоединения, если не указан по дефолту LEFT JOIN
                     if(!$value['type']) $join .= 'LEFT JOIN ';
                         else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
 
+                    // Конкатенирую таблицу и признак ON
                     $join .= $key . ' ON ';
 
+                    // Таблица с которой присоединяемся, если есть берём из массива
+                    // если нет берём ту которая пришла в $join_table из $table
                     if($value['on']['table']) $join .= $value['on']['table'];
                         else $join .= $join_table;
+
 
                     $join .= '.' . $join_fields[0] . '=' . $key . '.' . $join_fields[1];
 
                     $join_table = $key;
 
                     if($newWhere) {
-
                         if($value['where']) {
-                            $newWhere       = false;
+                            $newWhere = false;
                         }
 
                         $groupCondition = 'WHERE';
