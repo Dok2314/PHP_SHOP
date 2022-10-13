@@ -20,13 +20,16 @@ class IndexController extends BaseController
           'black'
         ];
 
+//        'fields'            => ['id', 'name'],
+//        'where'             => ['name' => "O'Raily"],
+
         $res = $db->get($table, [
              'fields'            => ['id', 'name'],
-             'where'             => ['id' => [1,2,3,4],'name' => "O'Raily"],
+             'where'             => ['name' => "O'Raily"],
              'operand'           => ['IN', '<>'],
              'condition'         => ['AND'],
-             'order'             => [1, 'name'],
-             'order_direction'   => ['ASC', 'DESC'],
+             'order'             => ['name'],
+             'order_direction'   => ['DESC'],
              'limit'             => 1,
             'join'               => [
                 [
@@ -42,21 +45,18 @@ class IndexController extends BaseController
                     ],
                     'group_condition' => 'AND'
                 ],
-                'join_table1' => [
+                'join_table2' => [
                     'table'     => 'join_table2',
                     'fields'    => ['id as j_id', 'name as j_name'],
                     'type'      => 'left',
-                    'where'     => ['name' => 'Daniil'],
+                    'where'     => ['surname' => 'Surname'],
                     'operand'   => '=',
                     'condition' => ['AND'],
-                    'on'        => [
-                        'table'  => 'teachers',
-                        'fields' => ['id', 'parent_id']
-                    ]
+                    'on'        => ['id', 'parent_id']
                 ]
             ]
         ]);
 
-        exit("I am admin panel");
+        exit('I am admin panel');
     }
 }

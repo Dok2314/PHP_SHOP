@@ -280,7 +280,7 @@ class BaseModel
                     $join_fields = [];
 
                     switch (2) {
-                        case count($value['on']['fields']):
+                        case count($value['on']['fields'] ?? []):
 
                             $join_fields = $value['on']['fields'];
 
@@ -300,7 +300,7 @@ class BaseModel
                             break;
                     }
 
-                    // Тип присоединения, если не указан по дефолту LEFT JOIN
+                    // Тип присоединения, если не указан - по дефолту LEFT JOIN
                     if(!$value['type']) $join .= 'LEFT JOIN ';
                         else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
 
@@ -309,9 +309,8 @@ class BaseModel
 
                     // Таблица с которой присоединяемся, если есть берём из массива
                     // если нет берём ту которая пришла в $join_table из $table
-                    if($value['on']['table']) $join .= $value['on']['table'];
+                    if($value['on']['table'] ?? '') $join .= $value['on']['table'];
                         else $join .= $join_table;
-
 
                     $join .= '.' . $join_fields[0] . '=' . $key . '.' . $join_fields[1];
 
