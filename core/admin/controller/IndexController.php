@@ -13,48 +13,19 @@ class IndexController extends BaseController
 
         $table = 'teachers';
 
-        $colors = [
-          'red',
-          'green',
-          'blue',
-          'black'
+        $files['gallery_img'] = [
+          'red.jpg',
+          'green.jpg',
+          'blue.jpg',
+          'black.jpg'
         ];
 
-//        'fields'            => ['id', 'name'],
-//        'where'             => ['name' => "O'Raily"],
+        $files['img'] = 'main_img.jpg';
 
-        $res = $db->get($table, [
-             'fields'            => ['id', 'name'],
-             'where'             => ['name' => "O'Raily"],
-             'operand'           => ['IN', '<>'],
-             'condition'         => ['AND'],
-             'order'             => ['name'],
-             'order_direction'   => ['DESC'],
-             'limit'             => 1,
-            'join'               => [
-                [
-                    'table'     => 'join_table1',
-                    'fields'    => ['id as j_id', 'name as j_name'],
-                    'type'      => 'left',
-                    'where'     => ['name' => 'Daniil'],
-                    'operand'   => '=',
-                    'condition' => ['OR'],
-                    'on'        => [
-                        'table'  => 'teachers',
-                        'fields' => ['id', 'parent_id']
-                    ],
-                    'group_condition' => 'AND'
-                ],
-                'join_table2' => [
-                    'table'     => 'join_table2',
-                    'fields'    => ['id as j_id', 'name as j_name'],
-                    'type'      => 'left',
-                    'where'     => ['surname' => 'Surname'],
-                    'operand'   => '=',
-                    'condition' => ['AND'],
-                    'on'        => ['id', 'parent_id']
-                ]
-            ]
+        $res = $db->add($table, [
+             'fields' => ['name' => 'Daniil', 'content' => 'Hello World'],
+             'except' => ['name'],
+             'files'  => $files
         ]);
 
         exit('I am admin panel');
