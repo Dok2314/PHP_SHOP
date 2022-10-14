@@ -1,0 +1,104 @@
+Fault: 14-10-2022 12:32:15 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:33:46 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:34:20 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:34:46 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:34:58 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:35:00 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:35:26 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:35:29 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:36:04 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:36:22 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:36:36 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]'' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:36:38 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img,) VALUES ('Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]'' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:36:46 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:37:14 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:37:27 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:39:10 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:39:13 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"blac' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:41:13 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:41:23 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:41:32 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:44:13 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:52:33 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:52:42 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:53:25 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img) VALUES ('Daniil','Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 12:58:40 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (name,content,gallery_img,img) VALUES ('[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 14-10-2022 13:05:24 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">INSERT INTO teachers (content,gallery_img,img) VALUES ('Hello World','[\"red.jpg\",\"green.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
