@@ -145,12 +145,13 @@ class BaseModel extends BaseModelMethods
      * return_id => true/false - возвращать или нет идентификатор вставленой записи
      * @return mixed
      */
-    final public function add($table, $set)
+    final public function add($table, $set = [])
     {
-        $set['fields']    = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : false;
+        $set['fields']    = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : $_POST;
         $set['files']     = (isset($set['files']) && is_array($set['files'])) ? $set['files'] : false;
 
-        // (bool)$set['return_id'] - Существует $set['return_id'] вернется true, не существует - вернется false
+        if(empty($set['fields']) && empty($set['files'])) return false;
+
         $set['return_id'] = isset($set['return_id']);
         $set['except']    = (isset($set['except']) && is_array($set['except'])) ? $set['except'] : false;
 
@@ -163,5 +164,59 @@ class BaseModel extends BaseModelMethods
         }
 
         return false;
+    }
+
+    final public function edit($table, $set = [])
+    {
+        $set['fields']    = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : $_POST;
+        $set['files']     = (isset($set['files']) && is_array($set['files'])) ? $set['files'] : false;
+
+        if(empty($set['fields']) && empty($set['files'])) return false;
+
+        $set['except']    = (isset($set['except']) && is_array($set['except'])) ? $set['except'] : false;
+
+        if(empty($set['all_rows'])) {
+            if(!empty($set['where'])) {
+                $where = $this->createWhere($set);
+            }else {
+                $columns = $this->showColumns($table);
+
+                if(!$columns) {
+                    return false;
+                }
+
+                if(isset($columns['id_row']) && isset($set['fields'][$columns['id_row']])) {
+                    $where = 'WHERE ' . $columns['id_row'] . '=' . $set['fields'][$columns['id_row']];
+                    unset($set['fields'][$columns['id_row']]);
+                }
+            }
+        }
+
+        $update = $this->createUpdate($set['fields'], $set['files'], $set['except']);
+
+        $query = "UPDATE $table SET $update WHERE $where";
+
+        return $this->query($query, 'u');
+    }
+
+    final public function showColumns($table)
+    {
+        $query = "SHOW COLUMNS FROM $table";
+        $res   = $this->query($query);
+
+        $columns = [];
+
+        if($res) {
+            // Делаю массив асоциативным + там где колонка PRIMARY, добавляю ей id_row = полю PRIMARY
+            foreach ($res as $column) {
+                $columns[$column['Field']] = $column;
+
+                if($column['Key'] === 'PRI') {
+                    $columns['id_row'] = $column['Field'];
+                }
+            }
+        }
+
+        return $columns;
     }
 }

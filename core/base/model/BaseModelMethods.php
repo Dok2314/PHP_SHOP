@@ -216,35 +216,33 @@ abstract class BaseModelMethods
 
     protected function createInsert($fields, $files, $except)
     {
-        if(!$fields) {
-            $fields = $_POST;
-        }
-
         $insertArr = [];
+
+        $insertArr['fields'] ??= '';
+        $insertArr['values'] ??= '';
 
         if($fields) {
             $sqlFunctions = ['NOW()'];
 
             foreach ($fields as $row => $value) {
+                // Есть исключение из филдов - выхожу из текущей итерации
                 if($except && in_array($row, $except)) {
                     continue;
                 }
 
-                $insertArr['fields'] ??= '';
                 $insertArr['fields'] .= $row . ',';
 
                 if(in_array($value, $sqlFunctions)) {
                     $insertArr['values'] .= $value . ',';
                 }else {
-                    $insertArr['values'] ??= '';
                     $insertArr['values'] .= "'" . addslashes($value) . "',";
                 }
             }
         }
 
         if($files) {
-            foreach ($files as $fileRow => $fileValue) {
-                $insertArr['fields'] .= $fileRow . ',';
+            foreach ($files as $fileKey => $fileValue) {
+                $insertArr['fields'] .= $fileKey . ',';
 
                 if(is_array($fileValue)) {
                     $insertArr['values'] .= "'" . addslashes(json_encode($fileValue)) . "',";
@@ -254,10 +252,16 @@ abstract class BaseModelMethods
             }
         }
 
+        // Меняю исходный массив, убираю запятую в конце
         foreach ($insertArr as $key => $arr) {
             $insertArr[$key] = rtrim($arr, ',');
         }
 
         return $insertArr;
+    }
+
+    protected function createUpdate($fields, $files, $except)
+    {
+
     }
 }
