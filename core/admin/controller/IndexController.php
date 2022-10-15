@@ -9,7 +9,7 @@ class IndexController extends BaseController
 {
     protected function inputData()
     {
-        $db    = Model::instance();
+        $db = Model::instance();
 
         $table = 'teachers';
 
@@ -22,11 +22,15 @@ class IndexController extends BaseController
 
         $files['img'] = 'main_img.jpg';
 
-        $res = $db->add($table, [
-             'fields' => ['name' => 'Daniil', 'content' => 'Hello World'],
-             'except' => ['name'],
-             'files'  => $files
-        ]);
+//        $_POST['name'] = 'Daniil';
+
+        $res = $db->showColumns('teachers');
+
+//        $db->add($table, [
+//             'fields' => ['name' => 'Daniil', 'content' => 'Hello World'],
+//             'except' => ['name'],
+//             'files'  => $files
+//        ]);
 
         exit('I am admin panel');
     }
