@@ -145,7 +145,7 @@ class BaseModel extends BaseModelMethods
      * return_id => true/false - возвращать или нет идентификатор вставленой записи
      * @return mixed
      */
-    final public function add($table, $set = [])
+    final public function add(string $table, array $set = [])
     {
         $set['fields']    = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : $_POST;
         $set['files']     = (isset($set['files']) && is_array($set['files'])) ? $set['files'] : false;
@@ -166,7 +166,7 @@ class BaseModel extends BaseModelMethods
         return false;
     }
 
-    final public function edit($table, $set = [])
+    final public function edit(string $table, array $set = [])
     {
         $set['fields']    = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : $_POST;
         $set['files']     = (isset($set['files']) && is_array($set['files'])) ? $set['files'] : false;
@@ -176,6 +176,8 @@ class BaseModel extends BaseModelMethods
         $set['except']    = (isset($set['except']) && is_array($set['except'])) ? $set['except'] : false;
 
         if(empty($set['all_rows'])) {
+            $where = '';
+
             if(!empty($set['where'])) {
                 $where = $this->createWhere($set);
             }else {
@@ -194,12 +196,12 @@ class BaseModel extends BaseModelMethods
 
         $update = $this->createUpdate($set['fields'], $set['files'], $set['except']);
 
-        $query = "UPDATE $table SET $update WHERE $where";
+        $query = "UPDATE $table SET $update $where";
 
         return $this->query($query, 'u');
     }
 
-    final public function showColumns($table)
+    final public function showColumns(string $table)
     {
         $query = "SHOW COLUMNS FROM $table";
         $res   = $this->query($query);
