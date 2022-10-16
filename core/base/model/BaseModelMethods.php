@@ -6,6 +6,8 @@ use function Sodium\add;
 
 abstract class BaseModelMethods
 {
+    protected array $sqlFunctions = ['NOW()'];
+
     protected function createFields($set, $table = false)
     {
         $set['fields'] = (isset($set['fields']) && is_array($set['fields'])) ? $set['fields'] : ['*'];
@@ -53,9 +55,10 @@ abstract class BaseModelMethods
         return $orderBy;
     }
 
-    protected function createWhere($set, $table = false, $instruction = 'WHERE')
+    protected function createWhere($set, $table = null, $instruction = 'WHERE')
     {
-        $table = $table . '.' ?? '';
+        $table ??= '';
+        $table = $table ? $table . '.' : '';
 
         $where = '';
 
@@ -222,8 +225,6 @@ abstract class BaseModelMethods
         $insertArr['values'] ??= '';
 
         if($fields) {
-            $sqlFunctions = ['NOW()'];
-
             foreach ($fields as $row => $value) {
                 // Есть исключение из филдов - выхожу из текущей итерации
                 if($except && in_array($row, $except)) {
@@ -232,7 +233,7 @@ abstract class BaseModelMethods
 
                 $insertArr['fields'] .= $row . ',';
 
-                if(in_array($value, $sqlFunctions)) {
+                if(in_array($value, $this->sqlFunctions)) {
                     $insertArr['values'] .= $value . ',';
                 }else {
                     $insertArr['values'] .= "'" . addslashes($value) . "',";
@@ -262,6 +263,36 @@ abstract class BaseModelMethods
 
     protected function createUpdate($fields, $files, $except)
     {
+        $update = '';
 
+        if($fields) {
+            foreach ($fields as $fieldKey => $fieldValue) {
+                if($except && in_array($fieldKey, $except)) {
+                    continue;
+                }
+
+                $update .= $fieldKey . '=';
+
+                if(in_array($fieldValue, $this->sqlFunctions)) {
+                    $update .= $fieldValue . ',';
+                }else {
+                    $update .= "'" . addslashes($fieldValue) . "',";
+                }
+            }
+        }
+
+        if($files) {
+            foreach ($files as $fileKey => $fileValue) {
+                $update .= $fileKey . '=';
+
+                if(is_array($fileValue)) {
+                    $update .= "'" . addslashes(json_encode($fileValue)) . "',";
+                }else{
+                    $update .= "'" . addslashes($fileValue) . "',";
+                }
+            }
+        }
+
+        return rtrim($update, ',');
     }
 }
