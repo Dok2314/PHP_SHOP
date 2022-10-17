@@ -2,8 +2,6 @@
 
 namespace core\base\model;
 
-use function Sodium\add;
-
 abstract class BaseModelMethods
 {
     protected array $sqlFunctions = ['NOW()'];
@@ -145,6 +143,7 @@ abstract class BaseModelMethods
         $fields = '';
         $join   = '';
         $where  = '';
+        $tables = '';
 
         if(isset($set['join'])) {
             $join_table = $table;
@@ -183,8 +182,8 @@ abstract class BaseModelMethods
                     }
 
                     // Тип присоединения, если не указан - по дефолту LEFT JOIN
-                    if(!$value['type']) $join .= 'LEFT JOIN ';
-                    else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
+                    if(empty($value['type'])) $join .= 'LEFT JOIN ';
+                        else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
 
                     // Конкатенирую таблицу и признак ON
                     $join .= $key . ' ON ';
@@ -197,6 +196,8 @@ abstract class BaseModelMethods
                     $join .= '.' . $join_fields[0] . '=' . $key . '.' . $join_fields[1];
 
                     $join_table = $key;
+
+                    $tables .= ', ' . trim($join_table);
 
                     if($newWhere) {
                         if($value['where']) {
@@ -214,7 +215,7 @@ abstract class BaseModelMethods
             }
         }
 
-        return compact('fields', 'join', 'where');
+        return compact('fields', 'join', 'where', 'tables');
     }
 
     protected function createInsert($fields, $files, $except)
@@ -275,7 +276,9 @@ abstract class BaseModelMethods
 
                 if(in_array($fieldValue, $this->sqlFunctions)) {
                     $update .= $fieldValue . ',';
-                }else {
+                }elseif($fieldValue === NULL) {
+                    $update .= "NULL" . ",";
+                } else {
                     $update .= "'" . addslashes($fieldValue) . "',";
                 }
             }
