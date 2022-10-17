@@ -17,7 +17,7 @@ class BaseModel extends BaseModelMethods
 
         if($this->db->connect_error) {
             throw new DbException('<h1 style="color: black;">' . 'Ошибка подключения к базе данных: ' . '</h1>' .
-                '<h3 style="color: red;">' . $this->db->connect_errno . ' ' . $this->db->connect_error . '</h3>');
+                '<h3 style="color: red;">' .$this->db->connect_errno . ' ' . $this->db->connect_error . '</h3>');
         }
 
         $this->db->query("SET NAMES UTF8");
@@ -36,7 +36,7 @@ class BaseModel extends BaseModelMethods
 
         //affected_rows - число строк, затронутых предыдущей операцией MySQL, "-1" - обозначает ошибку
         if($this->db->affected_rows === -1) {
-            throw new DbException('<h1 style="color: black;">' . 'Ошибка в SQL запросе: ' . '</h1>' . '<h3 style="color: red;">'
+            throw new DbException('<h1 style="color: black;">'.'Ошибка в SQL запросе: ' . '</h1>' . '<h3 style="color: red;">'
                 . $query . ' - ' . $this->db->errno . ' ' . $this->db->error . '</h3>'
             );
         }
@@ -235,7 +235,35 @@ class BaseModel extends BaseModelMethods
      */
     final public function delete(string $table, array $set)
     {
+        $table = trim($table);
 
+        $where = $this->createWhere($set, $table);
+
+        $columns = $this->showColumns($table);
+
+        if(!$columns) {
+            return false;
+        }
+
+        if(isset($set['fields']) && is_array($set['fields'])) {
+            if($columns['id_row']) {
+                $key = array_search($columns['id_row'], $set['fields']);
+
+                if($key !== false) {
+                    unset($set['fields'][$key]);
+                }
+
+                $fields = [];
+
+                foreach ($set['fields'] as $field) {
+                    $fields[$field] = $columns[$field]['Default'];
+                }
+
+                $update = $this->createUpdate($fields, false, false);
+
+                $query = "UPDATE $table SET $update $where";
+            }
+        }
     }
 
     final public function showColumns(string $table)
