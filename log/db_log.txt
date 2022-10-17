@@ -1,0 +1,4 @@
+Fault: 17-10-2022 21:41:35 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">UPDATE teachers SET name=,img= WHERE teachers.id='1'  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'img= WHERE teachers.id='1'' at line 1</h3>
+file /Users/daniilkoversun/Desktop/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+

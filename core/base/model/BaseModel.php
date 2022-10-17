@@ -236,7 +236,6 @@ class BaseModel extends BaseModelMethods
     final public function delete(string $table, array $set)
     {
         $table = trim($table);
-
         $where = $this->createWhere($set, $table);
 
         $columns = $this->showColumns($table);
@@ -246,24 +245,32 @@ class BaseModel extends BaseModelMethods
         }
 
         if(isset($set['fields']) && is_array($set['fields'])) {
-            if($columns['id_row']) {
+            if(isset($columns['id_row'])) {
                 $key = array_search($columns['id_row'], $set['fields']);
 
                 if($key !== false) {
                     unset($set['fields'][$key]);
                 }
-
-                $fields = [];
-
-                foreach ($set['fields'] as $field) {
-                    $fields[$field] = $columns[$field]['Default'];
-                }
-
-                $update = $this->createUpdate($fields, false, false);
-
-                $query = "UPDATE $table SET $update $where";
             }
+
+            $fields = [];
+
+            foreach ($set['fields'] as $field) {
+                $fields[$field] = $columns[$field]['Default'];
+            }
+
+            $update = $this->createUpdate($fields, false, false);
+
+            $query = "UPDATE $table SET $update $where";
+        }else{
+            $join_arr      = $this->createJoin($set, $table);
+            $join          = $join_arr['join'];
+            $join_tables   = $join_arr['tables'];
+
+            $query = 'DELETE ' . $table . $join_tables . ' FROM ' . $table . ' ' . $join . ' ' . $where;
         }
+
+        return $this->query($query, 'u');
     }
 
     final public function showColumns(string $table)

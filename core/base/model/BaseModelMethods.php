@@ -2,8 +2,6 @@
 
 namespace core\base\model;
 
-use function Sodium\add;
-
 abstract class BaseModelMethods
 {
     protected array $sqlFunctions = ['NOW()'];
@@ -184,8 +182,8 @@ abstract class BaseModelMethods
                     }
 
                     // Тип присоединения, если не указан - по дефолту LEFT JOIN
-                    if(!$value['type']) $join .= 'LEFT JOIN ';
-                    else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
+                    if(empty($value['type'])) $join .= 'LEFT JOIN ';
+                        else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
 
                     // Конкатенирую таблицу и признак ON
                     $join .= $key . ' ON ';
@@ -279,7 +277,7 @@ abstract class BaseModelMethods
                 if(in_array($fieldValue, $this->sqlFunctions)) {
                     $update .= $fieldValue . ',';
                 }elseif($fieldValue === NULL) {
-                    $update .= "$fieldValue" . ",";
+                    $update .= "NULL" . ",";
                 } else {
                     $update .= "'" . addslashes($fieldValue) . "',";
                 }

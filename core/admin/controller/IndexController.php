@@ -14,8 +14,13 @@ class IndexController extends BaseController
         $table = 'teachers';
 
         $res = $db->delete($table, [
-            'fields' => ['id', 'name', 'img'],
-            'where'  => ['id' => 1]
+            'where'  => ['id' => 173],
+            'join' => [
+                [
+                    'table' => 'students',
+                    'on' => ['student_id', 'id']
+                ]
+            ]
         ]);
 
         exit('I am admin panel');
