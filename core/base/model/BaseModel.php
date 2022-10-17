@@ -17,7 +17,7 @@ class BaseModel extends BaseModelMethods
 
         if($this->db->connect_error) {
             throw new DbException('<h1 style="color: black;">' . 'Ошибка подключения к базе данных: ' . '</h1>' .
-                '<h3 style="color: red;">' .$this->db->connect_errno . ' ' . $this->db->connect_error . '</h3>');
+                '<h3 style="color: red;">' . $this->db->connect_errno . ' ' . $this->db->connect_error . '</h3>');
         }
 
         $this->db->query("SET NAMES UTF8");
@@ -36,7 +36,7 @@ class BaseModel extends BaseModelMethods
 
         //affected_rows - число строк, затронутых предыдущей операцией MySQL, "-1" - обозначает ошибку
         if($this->db->affected_rows === -1) {
-            throw new DbException('<h1 style="color: black;">'.'Ошибка в SQL запросе: ' . '</h1>' . '<h3 style="color: red;">'
+            throw new DbException('<h1 style="color: black;">' . 'Ошибка в SQL запросе: ' . '</h1>' . '<h3 style="color: red;">'
                 . $query . ' - ' . $this->db->errno . ' ' . $this->db->error . '</h3>'
             );
         }
@@ -175,9 +175,9 @@ class BaseModel extends BaseModelMethods
 
         $set['except']    = (isset($set['except']) && is_array($set['except'])) ? $set['except'] : false;
 
-        if(empty($set['all_rows'])) {
-            $where = '';
+        $where = '';
 
+        if(empty($set['all_rows'])) {
             if(!empty($set['where'])) {
                 $where = $this->createWhere($set);
             }else {
@@ -199,6 +199,43 @@ class BaseModel extends BaseModelMethods
         $query = "UPDATE $table SET $update $where";
 
         return $this->query($query, 'u');
+    }
+
+    /**
+     * @param string $table - Таблица базы данных
+     * @param array $set
+     * 'fields'           => ['id', 'name'],
+     * 'where'            => ['fio' => 'Smirnov', 'name' => 'Oleg', 'surname' => 'Sergeevich'],
+     * 'operand'          => ['=', '<>'],
+     * 'condition'        => ['AND'],
+     * 'join' => [
+     *      'table'             => 'teachers',
+     *      'fields'            => ['id as j_id', 'name as j_name'],
+     *      'type'              => 'left',
+     *      'where'             => ['name' => 'Sasha'],
+     *      'operand'           => ['='],
+     *      'condition'         => ['OR'],
+     *      'on'                => ['id', 'parent_id'],
+     *      'group_condition'   => 'AND'
+     *      ]
+     *  ],
+     *  'join_table1' => [
+     *      'table'     => 'join_table2',
+     *      'fields'    => ['id as j_id', 'name as j_name'],
+     *      'type'      => 'left',
+     *      'where'     => ['name' => 'Sasha'],
+     *      'operand'   => ['='],
+     *      'condition' => ['OR'],
+     *      'on'        => [
+     *      'table'  => 'teachers',
+     *      'fields' => ['id', 'parent_id']
+     *      ]
+     *  ]
+     * @return void
+     */
+    final public function delete(string $table, array $set)
+    {
+
     }
 
     final public function showColumns(string $table)
