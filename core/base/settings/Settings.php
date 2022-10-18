@@ -8,7 +8,7 @@ class Settings
 {
     use Singleton;
 
-    private $routes = [
+    private array $routes = [
         'admin' => [
             'alias' => 'admin',
             'path'  => 'core/admin/controller/',
@@ -36,12 +36,12 @@ class Settings
         ]
     ];
 
-    private $templateArr = [
+    private array $templateArr = [
         'text'     => ['name', 'phone', 'address'],
         'textarea' => ['content', 'keywords']
     ];
 
-    private $lalala = 'lalala';
+    private string $defaultTable = 'teachers';
 
     static public function getPropertyByName($propertyName)
     {

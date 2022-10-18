@@ -24,19 +24,27 @@ abstract class BaseController
     {
         if(!$admin) {
             if(USER_CSS_JS['styles']) {
-                foreach(USER_CSS_JS['styles'] as $style) $this->styles[] = PATH . TEMPLATE . trim($style, '/');
+                foreach(USER_CSS_JS['styles'] as $style) {
+                    $this->styles[] = PATH . TEMPLATE . trim($style, '/');
+                }
             }
 
             if(USER_CSS_JS['scripts']) {
-                foreach(USER_CSS_JS['scripts'] as $script) $this->scripts[] = PATH . TEMPLATE . trim($script, '/');
+                foreach(USER_CSS_JS['scripts'] as $script) {
+                    $this->scripts[] = PATH . TEMPLATE . trim($script, '/');
+                }
             }
         }else{
             if(ADMIN_CSS_JS['styles']) {
-                foreach(ADMIN_CSS_JS['styles'] as $style) $this->styles[] = PATH . ADMIN_TEMPLATE . trim($style, '/');
+                foreach(ADMIN_CSS_JS['styles'] as $style) {
+                    $this->styles[] = PATH . ADMIN_TEMPLATE . trim($style, '/');
+                }
             }
 
             if(ADMIN_CSS_JS['scripts']) {
-                foreach(ADMIN_CSS_JS['scripts'] as $script) $this->styles[] = PATH . ADMIN_TEMPLATE . trim($script, '/');
+                foreach(ADMIN_CSS_JS['scripts'] as $script) {
+                    $this->styles[] = PATH . ADMIN_TEMPLATE . trim($script, '/');
+                }
             }
         }
     }
