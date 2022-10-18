@@ -43,8 +43,11 @@ abstract class BaseModelMethods
                     $order_direction = strtoupper($set['order_direction'][$direct_count - 1]);
                 }
 
-                if(is_int($order)) $orderBy .= $order . ' ' . $order_direction . ', ';
-                else $orderBy .= $table . $order . ' ' . $order_direction . ', ';
+                if(is_int($order)) {
+                    $orderBy .= $order . ' ' . $order_direction . ', ';
+                }else {
+                    $orderBy .= $table . $order . ' ' . $order_direction . ', ';
+                }
             }
 
             $orderBy = rtrim($orderBy, ', ');
@@ -87,17 +90,17 @@ abstract class BaseModelMethods
                 }
 
                 if($operand === 'IN' || $operand === 'NOT IN') {
-                    //Если в $value находится SELECT, то оборачиваем его в "(SELECT ...)" и формируем $where
                     if(is_string($value) && strpos($value, 'SELECT') === 0) {
                         $in_str = $value;
                     }else{
-                        // В любом случае делаю массив $temp_value
-                        if(is_array($value)) $temp_value = $value;
-                        else $temp_value = explode(',', $value);
+                        if(is_array($value)) {
+                            $temp_value = $value;
+                        } else {
+                            $temp_value = explode(',', $value);
+                        }
 
                         $in_str = '';
 
-                        // Оборачиваем значения в "'$v'"
                         foreach ($temp_value as $v) {
                             $in_str .= "'" . addslashes(trim($v)) . "',";
                         }
@@ -108,8 +111,8 @@ abstract class BaseModelMethods
                     $like_template = explode('%', $operand);
 
                     foreach ($like_template as $lt_key => $lt_value) {
-                        //Если нет $lt_value - в нём пустая строка и был '%',
-                        // проверяем ключ,если его нет, он = 0, нужно приклеить '%' в начало строки
+                        // Нет $lt_value - в нём пустая строка и был '%',
+                        // проверяю ключ,если его нет, он = 0, нужно приклеить '%' в начало строки
                         // если ключ есть - нужно приклеить в конец строки '%'
                         if(!$lt_value) {
                             if(!$lt_key) {
@@ -122,8 +125,6 @@ abstract class BaseModelMethods
 
                     $where .= $table . $key . ' LIKE ' . "'" . addslashes($value) . "' $condition";
                 }else{
-                    // Проверяем если SELECT стоит в начале строки
-                    // оборачиваем его в скобки (SELECT...)
                     if(strpos($value, 'SELECT') === 0) {
                         $where .= $table . $key . $operand . '(' . $value . ") $condition";
                     }else{
@@ -151,8 +152,11 @@ abstract class BaseModelMethods
             foreach ($set['join'] as $key => $value) {
                 if(is_int($key)) {
                     // Делаю ключ равным названию таблицы, или же выхожу из текущей итерации
-                    if(!$value['table']) continue;
-                    else $key = $value['table'];
+                    if(!$value['table']){
+                        continue;
+                    } else {
+                        $key = $value['table'];
+                    }
                 }
 
                 if($join) $join .= ' ';
@@ -182,16 +186,22 @@ abstract class BaseModelMethods
                     }
 
                     // Тип присоединения, если не указан - по дефолту LEFT JOIN
-                    if(empty($value['type'])) $join .= 'LEFT JOIN ';
-                        else $join .= trim(strtoupper($value['type'])) . ' JOIN ';
+                    if(empty($value['type'])) {
+                        $join .= 'LEFT JOIN ';
+                    } else {
+                        $join .= trim(strtoupper($value['type'])) . ' JOIN ';
+                    }
 
                     // Конкатенирую таблицу и признак ON
                     $join .= $key . ' ON ';
 
                     // Таблица с которой присоединяемся, если есть берём из массива
                     // если нет берём ту которая пришла в $join_table из $table
-                    if(isset($value['on']['table'])) $join .= $value['on']['table'];
-                    else $join .= $join_table;
+                    if(isset($value['on']['table'])) {
+                        $join .= $value['on']['table'];
+                    } else {
+                        $join .= $join_table;
+                    }
 
                     $join .= '.' . $join_fields[0] . '=' . $key . '.' . $join_fields[1];
 

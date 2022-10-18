@@ -4,25 +4,14 @@ namespace core\admin\controller;
 
 use core\admin\model\Model;
 use core\base\controller\BaseController;
+use core\base\settings\Settings;
 
 class IndexController extends BaseController
 {
     protected function inputData()
     {
-        $db = Model::instance();
+        $redirect = PATH . Settings::getPropertyByName('routes')['admin']['alias'] . '/show';
 
-        $table = 'teachers';
-
-        $res = $db->delete($table, [
-            'where'  => ['id' => 173],
-            'join' => [
-                [
-                    'table' => 'students',
-                    'on' => ['student_id', 'id']
-                ]
-            ]
-        ]);
-
-        exit('I am admin panel');
+        $this->redirect($redirect);
     }
 }
