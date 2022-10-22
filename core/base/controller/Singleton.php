@@ -20,6 +20,12 @@ trait Singleton
             return self::$instance;
         }
 
-        return self::$instance = new self;
+        self::$instance = new self;
+
+        if(method_exists(self::$instance, 'connect')) {
+            self::$instance->connect();
+        }
+
+        return self::$instance;
     }
 }

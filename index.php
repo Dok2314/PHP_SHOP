@@ -13,7 +13,6 @@ use core\base\exceptions\DbException;
 use core\base\controller\RouteController;
 
 try {
-    \core\base\model\BaseModel::instance();
    RouteController::instance()->route();
 }
 catch (RouteException $e) {
