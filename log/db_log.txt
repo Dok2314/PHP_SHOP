@@ -1,0 +1,28 @@
+Fault: 22-10-2022 20:22:57 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 22-10-2022 20:25:56 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 22-10-2022 20:27:23 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 22-10-2022 20:30:17 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 22-10-2022 20:30:59 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 22-10-2022 20:31:00 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM show - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+
+Fault: 22-10-2022 20:31:05 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SHOW COLUMNS FROM show - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 39
+

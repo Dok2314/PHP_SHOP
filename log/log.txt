@@ -1,0 +1,20 @@
+Fault: 22-10-2022 19:13:23 - Не верное имя файла для подключения - core/user/controller/DirController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 38
+
+Fault: 22-10-2022 19:13:24 - Не верное имя файла для подключения - core/user/controller/DirController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 38
+
+Fault: 22-10-2022 20:23:02 - Не верное имя файла для подключения - core/user/controller/DirController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 38
+
+Fault: 22-10-2022 20:23:11 - Не верное имя файла для подключения - core/user/controller/DirController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 38
+
+Fault: 22-10-2022 20:23:11 - Не верное имя файла для подключения - core/user/controller/DirController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 38
+
