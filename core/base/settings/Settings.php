@@ -43,6 +43,8 @@ class Settings
 
     private string $defaultTable = 'teachers';
 
+    private string $expansion = 'core/admin/expansion/';
+
     static public function getPropertyByName($propertyName)
     {
         return self::instance()->has($propertyName);
