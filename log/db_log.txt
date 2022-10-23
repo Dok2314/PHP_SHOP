@@ -26,3 +26,47 @@ Fault: 22-10-2022 20:31:05 - <h1 style="color: black;">Ошибка в SQL за�
 file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
 In line 39
 
+Fault: 23-10-2022 19:58:34 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 19:59:33 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 19:59:40 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 19:59:50 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 19:59:53 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 20:00:26 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 20:00:52 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 20:01:03 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 20:01:12 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 20:01:17 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+
+Fault: 23-10-2022 20:01:30 - <h1 style="color: black;">Ошибка в SQL запросе: </h1><h3 style="color: red;">SELECT students.id as id,students.name,students.content FROM students   ORDER BY  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</h3>
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/model/BaseModel.php
+In line 36
+

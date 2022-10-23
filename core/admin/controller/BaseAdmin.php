@@ -15,6 +15,8 @@ abstract class BaseAdmin extends BaseController
     protected $columns;
     protected $data;
 
+    protected $adminPath;
+
     protected $menu;
     protected $title;
 
@@ -32,11 +34,19 @@ abstract class BaseAdmin extends BaseController
             $this->menu = Settings::getPropertyByName('projectTables');
         }
 
+        if(!$this->adminPath) {
+            $this->adminPath = PATH . Settings::getPropertyByName('routes')['admin']['alias'] . '/';
+        }
+
         $this->sendNoCacheHeaders();
     }
 
     protected function outputData()
     {
+        $this->header = $this->render(ADMIN_TEMPLATE . 'include/header');
+        $this->footer = $this->render(ADMIN_TEMPLATE . 'include/footer');
+
+        return $this->render(ADMIN_TEMPLATE . 'layout/default');
     }
 
     protected function sendNoCacheHeaders()
