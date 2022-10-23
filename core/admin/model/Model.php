@@ -8,9 +8,4 @@ use core\base\model\BaseModel;
 class Model extends BaseModel
 {
     use Singleton;
-
-    public function test()
-    {
-        echo 'TEST';
-    }
 }
