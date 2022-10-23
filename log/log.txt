@@ -18,3 +18,939 @@ Fault: 22-10-2022 20:23:11 - Не верное имя файла для подк
 file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
 In line 38
 
+Fault: 23-10-2022 18:24:22 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:26:35 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:28:09 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:29:25 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:29:47 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:31:55 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:00 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:07 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:14 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:21 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:28 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:50 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:50 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:35:53 - Отсутствует шаблон - core/admin/view/show
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:36:39 - Отсутствует шаблон - core/admin/view/include/header
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:36:49 - Отсутствует шаблон - core/admin/view/include/header
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:36:54 - Отсутствует шаблон - core/admin/view/include/header
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:36:59 - Отсутствует шаблон - core/admin/view/include/header
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 76
+
+Fault: 23-10-2022 18:37:23 - Отсутствует шаблон - core/admin/view/include/header
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:37:33 - Отсутствует шаблон - core/admin/view/include/footer
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:37:38 - Отсутствует шаблон - core/admin/view/include/footer
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:37:47 - Отсутствует шаблон - core/admin/view/include/footer
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/controller/BaseController.php
+In line 75
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:44:53 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:45:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:47:49 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:48:42 - Не верное имя файла для подключения - core/user/controller/LoginController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:49:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:50:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:53:45 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:53:45 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:53:45 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:53:45 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:53:45 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:53:45 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:08 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:17 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 18:54:17 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:12 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:13 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:13 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:13 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:13 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:13 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:33 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:33 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:33 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:33 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:33 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:33 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:39 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:39 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:39 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:39 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:39 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:15:39 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:16:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:16:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:16:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:16:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:16:53 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:16:53 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:08 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:20 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:17:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:19:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:19:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:19:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:19:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:19:41 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:19:41 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:22:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:22:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:22:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:22:52 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:22:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:22:52 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:57 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:57 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:57 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:57 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:57 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:59 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:59 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:59 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:59 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:23:59 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:20 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:20 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:31 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:31 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:31 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:59 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:24:59 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:09 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:09 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:22 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:22 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:23 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:23 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:51 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:26:51 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:27:03 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:27:03 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:27:37 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:27:37 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:27:41 - Не верное имя файла для подключения - core/user/controller/AdmincreatesitemapController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:27:44 - Не верное имя файла для подключения - core/user/controller/AdmincreatesitemapController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:30:26 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:30:26 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:02 - Не верное имя файла для подключения - core/admin/controller/ImgController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:02 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:02 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:12 - Не верное имя файла для подключения - core/admin/controller/ImgController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:12 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:12 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:19 - Не верное имя файла для подключения - core/admin/controller/AdminController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:37 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:37 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:37 - Не верное имя файла для подключения - core/admin/controller/ImgController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:32:39 - Не верное имя файла для подключения - core/admin/controller/AdminController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:33:26 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:33:26 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:33:37 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:33:37 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:33:47 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:33:47 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:34:00 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:34:00 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:34:48 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:34:48 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:36:33 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:36:33 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:36:40 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:36:40 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:36:41 - Не верное имя файла для подключения - core/admin/controller/AdminController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:36:43 - Не верное имя файла для подключения - core/admin/controller/AdminController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:37:48 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:37:48 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:05 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:05 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:08 - Не верное имя файла для подключения - core/admin/controller/AdminController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:10 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:10 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:36 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:38:36 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:39:25 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:39:25 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:08 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:08 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:26 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:26 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:35 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:35 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:50 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:40:50 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:42:04 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:42:04 - Не верное имя файла для подключения - core/user/controller/TemplateController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:42:07 - Не верное имя файла для подключения - core/admin/controller/AdminController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:42:29 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:43:31 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:43:43 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:43:59 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:44:14 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:44:48 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:45:06 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:45:14 - Не верное имя файла для подключения - core/user/controller/ImagesController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:57:45 - Не верное имя файла для подключения - core/admin/controller/EditController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 19:57:50 - Не верное имя файла для подключения - core/admin/controller/AddController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 20:02:26 - Не верное имя файла для подключения - core/admin/controller/EditController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+
+Fault: 23-10-2022 20:02:28 - Не верное имя файла для подключения - core/admin/controller/EditController
+file /Users/daniilkoversun/Desktop/My computer/Php Projects/PHP_Shop/core/base/settings/internal_settings.php
+In line 39
+

@@ -36,14 +36,19 @@ class Settings
         ]
     ];
 
+    private string $expansion = 'core/admin/expansion/';
+
+    private string $defaultTable = 'teachers';
+
+    private array $projectTables = [
+        'teachers' => ['name' => 'Учителя', 'img' => 'pages.png'],
+        'students' => ['name' => 'Ученики'],
+    ];
+
     private array $templateArr = [
         'text'     => ['name', 'phone', 'address'],
         'textarea' => ['content', 'keywords']
     ];
-
-    private string $defaultTable = 'teachers';
-
-    private string $expansion = 'core/admin/expansion/';
 
     static public function getPropertyByName($propertyName)
     {

@@ -22,6 +22,16 @@ class ShowController extends BaseAdmin
 
     protected function outputData()
     {
+        $args = func_get_args()[0];
+        $vars = $args ?: [];
+
+        if(!$this->template) {
+            $this->template = ADMIN_TEMPLATE . 'show';
+        }
+
+        $this->content = $this->render($this->template, $vars);
+
+        return parent::outputData();
     }
 
     protected function createData(array $arr = [])
@@ -104,7 +114,7 @@ class ShowController extends BaseAdmin
         // ORDER parent_id - более приоритетно чем menu_position
         $this->data = $this->model->get($this->table, [
             'fields'          => $fields,
-            'order'           => $order,
+            'order'           => empty($order) ?: $fields['name'],
             'order_direction' => ['ASC', 'DESC']
         ]);
     }

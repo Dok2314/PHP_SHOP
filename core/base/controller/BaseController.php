@@ -9,6 +9,10 @@ abstract class BaseController
 {
     use BaseMethods;
 
+    protected $header;
+    protected $content;
+    protected $footer;
+
     protected $page;
     protected $errors;
 
@@ -17,6 +21,7 @@ abstract class BaseController
     protected $outputMethod;
     protected $parameters;
 
+    protected $template;
     protected $styles;
     protected $scripts;
 
