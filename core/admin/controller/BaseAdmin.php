@@ -69,7 +69,7 @@ abstract class BaseAdmin extends BaseController
         }
     }
 
-    protected function expansion(array $args = [])
+    protected function expansion(array $args = [], $settings = false)
     {
         $filename  = explode('_', $this->table);
         $className = '';
@@ -78,14 +78,40 @@ abstract class BaseAdmin extends BaseController
             $className .= ucfirst($item);
         }
 
-        $class = Settings::getPropertyByName('expansion') . $className . 'Expansion';
+        if(!$settings) {
+            $path = Settings::getPropertyByName('expansion');
+        }elseif(is_object($settings)) {
+            $path = $settings::getPropertyByName('expansion');
+        }else {
+            $path = $settings;
+        }
+
+        $class = $path . $className . 'Expansion';
 
         if(is_readable($_SERVER['DOCUMENT_ROOT'] . PATH . $class . '.php')) {
             $class = str_replace('/', '\\', $class);
 
             $exp = $class::instance();
 
-            $res = $exp->expansion($args);
+            foreach ($this as $propertyName => $propertyValue) {
+                // В обьект $exp передаю по ссылке свойства текущего класса,
+                // изменю свойство у обьекта класса $exp - оно изменится и в текущем классе,
+                // так как передано по ссылке
+                $exp->$propertyName = &$this->$propertyName;
+            }
+
+            // Вызываю метод после форича, тем самым ссылка на динамический вызов свойств вступает в силу
+           return $exp->expansion($args);
+        }else {
+            $file = $_SERVER['DOCUMENT_ROOT'] . PATH . $path . $this->table . '.php';
+
+            extract($args);
+
+            if(is_readable($file)) {
+                return include $file;
+            }
         }
+
+        return false;
     }
 }
